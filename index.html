@@ -7,15 +7,88 @@
     <!--Get from font awesome website; CSS getting-started -->
     <script src="https://use.fontawesome.com/adc490ad29.js"></script>
     <!--Get from bootstrap website-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!--custom stylesheet-->
     <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap Theme</title>
+    <title>Photo's Portfolio</title>
 </head>
-<body>
+<body id= "home">
     <!--START HERE!-->
     
-    <span id= "year"></span>
+    <!-- NavbarTop Portion --> <!-- Added to give a cinematic-reel effect to the page-->
+    <nav id= "navTop" class="navbar bg-dark navbar-dark navbar-expand-md py-4 text-secondary">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <h3></h3>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Showcase Section-->
+
+    <section id="showcase" class= "py-5">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-6">
+                    <h1 class="display-2 mt-5 pt-5 text-light">
+                        Photo-graphy: Painting with light
+                        <p class="lead"> Creating art from the mundane and monotonous nature of reality.</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Navbar Portion --> <!-- optional: maybe experiment with sticky-top and keep it below a cinematic-style squashed carousel?-->
+    <nav id= "navTrack" class="navbar bg-dark navbar-dark navbar-expand-md sticky-top py-4 text-secondary">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">
+                <h3>NoName Photography</h3>
+            </a>        
+            <button class= "navbar-toggler btn btn-outline-secondary" type= "button" data-toggle= "collapse" data-target= "#navDrop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navDrop" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link text-secondary">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link text-secondary">About</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="#services" class="nav-link text-secondary">Services</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="#contact" class="nav-link text-secondary">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Subscribe to blog Section -->
+    <section id="travel-logs" class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-resp">
+                    <input type="text" class="form-control form-control-lg" placeholder= "Enter Name:">
+                </div>
+
+                <div class="col-md-4 mb-resp">
+                    <input type="email" class="form-control form-control-lg" placeholder= "Enter Email:">
+                </div>
+
+                <div class="col-md-4">
+                    <button class="btn-outline-light bg-dark btn-lg w-100 mb-resp">
+                        <i class="fa fa-envelope-open-o"></i> Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- JQUERY MIN FROM URL: http://code.jquery.com/  (jQuery Core-> min) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
