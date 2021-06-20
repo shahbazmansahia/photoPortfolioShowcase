@@ -5,7 +5,9 @@
   background-repeat: no-repeat;
   min-height: 560px; }
 
+.sticky-top {
+  position: sticky;
+  top: -1px; }
+
 .mb-resp {
   margin-bottom: 1rem; }
-
-/*# sourceMappingURL=style.css.map */

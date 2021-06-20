@@ -8,6 +8,16 @@
     min-height: 560px;
 }
 
+.sticky-top {           //fixed the sticky top to make it stick to the actual top
+    position: sticky;
+    top: -1px;
+}
+
 .mb-resp{
     margin-bottom: 1rem;
+}
+
+.instagram-media {
+    // background-color:#212529; // Tried to stylize insta-embeds
+    // color: #6c757d;           // Tried to stylize insta-embeds
 }
