@@ -28,3 +28,19 @@
     text-align: right;
     margin-bottom: 0px;
 }
+
+@media (max-width: 575px){
+    #services {
+        .card {
+            margin-top: 4rem;
+        }
+     }
+}
+
+@media (max-width: 767px){
+    #services {
+        .card {
+            margin-top: 3rem;
+        }
+        }
+}
