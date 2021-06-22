@@ -11,3 +11,8 @@
 
 .mb-resp {
   margin-bottom: 1rem; }
+
+#footnote {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-bottom: 0px; }
