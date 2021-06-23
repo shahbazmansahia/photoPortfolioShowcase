@@ -12,17 +12,12 @@
 .mb-resp {
   margin-bottom: 1rem; }
 
-/*              // MESS WITH THIS TO ESTABLISH A BACKGROUND
 #services {
-    position: relative;
-    top: -24px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("https://source.unsplash.com/zgRKQKHf8v0/2400x1600/");
-    background-repeat: no-repeat;
-}
-*/
+  position: relative;
+  background: url("https://source.unsplash.com/random/3840x2160/?nature");
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
 #footnote {
   font-size: 0.8rem;
   text-align: right;
