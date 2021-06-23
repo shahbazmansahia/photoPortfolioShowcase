@@ -1,9 +1,11 @@
 #showcase {
   position: relative;
   background: url("https://source.unsplash.com/random/1920x1080/?street-photography");
-  background-position: 0px -200px;
+  background-position: 0px 0px;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 560px; }
+  min-height: 560px;
+  background-attachment: fixed; }
 
 .sticky-top {
   position: sticky;
@@ -36,6 +38,12 @@
   font-size: 0.8rem;
   text-align: right;
   margin-bottom: 0px; }
+
+#contact #profileHead {
+  margin-top: -135px; }
+
+#contact .card {
+  border-color: #000; }
 
 @media (max-width: 575px) {
   #services .card {
