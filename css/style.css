@@ -41,9 +41,11 @@
 
 #contact #profileHead {
   margin-top: -135px; }
+  #contact #profileHead img {
+    margin: auto; }
 
 #contact .card {
-  border-color: #000; }
+  border-color: #212529; }
 
 @media (max-width: 575px) {
   #services .card {
