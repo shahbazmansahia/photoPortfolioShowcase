@@ -51,18 +51,49 @@
     margin-bottom: 0px;
 }
 
+#contact {
+    ul {
+        background-color: rgba (0, 0, 0, 0.0); 
+    }
+}
+
 #contact #profileHead {
     margin-top: -135px;
     img{
         margin: auto;
     }
+    
 }
 
 
-#contact .card{
+#contact .card {
     border-color: #212529;
-
+    color:#212529;
+    .fa {
+        color:#212529;
+    }
 }
+
+.bg-transparentCust {
+    background-color: transparent!important;
+}
+
+#contact .card:hover {
+    div{
+        background-color: transparent!important;
+    }
+    position: relative;
+    background: url("https://source.unsplash.com/Y4Th0DPWUD0/2000x3000");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    //background: rgba (0, 0, 0, 0.7);
+    color: #f8f9fa; 
+    .fa {
+        color: #f8f9fa;
+    }
+}
+
 
 @media (max-width: 575px){
     #services {
