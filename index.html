@@ -726,11 +726,10 @@
                 //smooth scroll animation implementation
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                    }, 900, function() {
+                    }, 100, function() {
                         //add hash value to URl after scroll
                         window.location.hash= hash;
-                    }
-                });
+                    });
             }
         });
 
