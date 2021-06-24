@@ -41,9 +41,9 @@
         </div>
     </section>
     
-    <!-- Navbar Portion --> <!-- optional: maybe experiment with sticky-top and keep it below a cinematic-style squashed carousel?-->
-    <nav id= "navTrack" class="navbar bg-dark navbar-dark navbar-expand-md sticky-top py-4 text-secondary">
-        <div class="container">
+    <!-- Navbar Portion --> <!-- FIX ME: SCROLL SPY NOT WORKING! COLORS NOT CHANGING! --><!-- optional: maybe experiment with sticky-top and keep it below a cinematic-style squashed carousel?-->
+    <nav id= "navBottom" class="navbar bg-dark navbar-dark navbar-expand-md sticky-top py-4 text-secondary">
+        <div class="container" id= "navTrack">
             <a href="#" class="navbar-brand text-light">
                 <h3>NoName Photography</h3>
             </a>        
@@ -648,7 +648,7 @@
                             </div>
                             <h2 class= "mt-2">Jangsher Dhaliwal</h2>
                             <p class="lead">
-                            <strong> You could reach out to us via email or dm. Please be mindful that it might take me a 2-5 days to respond back due to the volume of messages we recieve. <br>
+                            <strong> You could reach out to us via email or dm. <br> Please be mindful that it might take us 2-5 days to respond back due to the volume of messages we recieve. <br>
                             <br>
                             Email:</strong> jd@jid.com
                                     
@@ -656,22 +656,22 @@
                             <div class="d-flex justify-content-center">
                                 <div class="p-4">
                                     <a href="http://facebook.com">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook fa-2x"></i>
                                     </a>
                                 </div>
                                 <div class="p-4">
                                     <a href="http://twitter.com">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter fa-2x"></i>
                                     </a>
                                 </div>
                                 <div class="p-4">
                                     <a href="http://instagram.com">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-instagram fa-2x"></i>
                                     </a>
                                 </div>
                                 <div class="p-4">
-                                    <a href="http://whatsapp.com">
-                                    <i class="fa fa-whatsapp"></i>
+                                    <a href="https://www.whatsapp.com/">
+                                    <i class="fa fa-whatsapp fa-2x"></i>
                                     </a>
                                 </div>
                             </div>
@@ -714,6 +714,25 @@
     <script>
         // Get current year for the copyright
         $('#year').text(new Date().getFullYear());
+        // for scroll spy init. and implementation
+        $('body').scrollspy({target: '#navTrack'});
+        // for smooth scrolling init. and implementation
+        $('#navTrack a').on('click', function (event){
+            //check for hash value; as in whether it is null/empty or not
+            if (this.hash != ''){
+                event.preventDefault();
+                // store hash value
+                const hash= this.hash;
+                //smooth scroll animation implementation
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 900, function() {
+                        //add hash value to URl after scroll
+                        window.location.hash= hash;
+                    }
+                });
+            }
+        });
 
     </script>
 </body>
